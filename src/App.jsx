@@ -22,8 +22,8 @@ function App() {
   return (
     <Container>
       <Hero/>
-      <Works/>
       <Who/>
+      <Works/>
       <Contact/>
     </Container>
   )
