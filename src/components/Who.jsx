@@ -1,5 +1,8 @@
+import { OrbitControls } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
 import React from "react";
 import styled from "styled-components";
+import Cube from "./Cube";
 
 const Section = styled.div`
   height: 100vh;
@@ -36,6 +39,7 @@ const Right = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+  
   @media only screen and (max-width: 768px) {
     align-items: center;
     text-align: center;
@@ -77,7 +81,12 @@ const Who = () => {
     <Section>
       <Container>
         <Left>
-          {/* 3D model */}
+        <Canvas camera={{fov:25, position:[5, 5, 5]}}>
+            <OrbitControls enableZoom={false} />
+            <ambientLight intensity={1}/>
+            <directionalLight position={[3,2,1]}/>
+            <Cube/>
+        </Canvas>
         </Left>
         <Right>
 
