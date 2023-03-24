@@ -23,7 +23,7 @@ const Desc = styled.div`
   }
 `;
 
-const ProductDesign = () => {
+const SocialMedia = () => {
   return (
     <>
       <Canvas>
@@ -33,10 +33,12 @@ const ProductDesign = () => {
         <OrbitControls enableZoom={false} autoRotate/>
       </Canvas>
       <Desc>
-        Esto es un product desing
+        Esto es un social media
+        We design products with a strong focus on both world class design and
+        ensuring your product is a market success.
       </Desc>
     </>
   )
 }
 
-export default ProductDesign
+export default SocialMedia

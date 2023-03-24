@@ -33,8 +33,7 @@ const WebDesing = () => {
         <OrbitControls enableZoom={false} autoRotate/>
       </Canvas>
       <Desc>
-        We design products with a strong focus on both world class design and
-        ensuring your product is a market success.
+        Esto es un web desing
       </Desc>
     </>
   )

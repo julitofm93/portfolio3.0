@@ -2,7 +2,15 @@ import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import React from "react";
 import styled from "styled-components";
-import Cube from "./Cube";
+/* import Html from "../../public/img/html.png"
+import Js from "../../public/img/js.png"
+import Sass from "../../public/img/sass.png"
+import ReactImg from "../../public/img/react.png"
+import Node from "../../public/img/node.png"
+import Concept2 from "../../public/img/concept2.png"
+import Mongo from "../../public/img/mongo.png"
+import Express from "../../public/img/express.png"
+import Git from "../../public/img/git.png" */
 
 const Section = styled.div`
   height: 100vh;
@@ -21,6 +29,9 @@ const Container = styled.div`
 
 const Left = styled.div`
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   @media only screen and (max-width: 768px) {
     display: none;
   }
@@ -76,27 +87,54 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
+const Award = styled.div`
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+`
+
+const AwardImg = styled.img`
+  width: 120px;
+  height: 120px;
+  border-radius: 20px;
+  transition: 0.25s ease-in;
+
+  &:hover{
+    filter: drop-shadow(8px 10px 10px rgba(255, 255, 255, 0.5));
+  }
+`
+
 const Who = () => {
   return (
     <Section>
       <Container>
         <Left>
-        <Canvas camera={{fov:25, position:[5, 5, 5]}}>
-            <OrbitControls enableZoom={false} />
-            <ambientLight intensity={1}/>
-            <directionalLight position={[3,2,1]}/>
-            <Cube/>
-        </Canvas>
+         <Award>
+                    <AwardImg src="img/html.png"/>
+                    <AwardImg src="img/js.png"/>
+                    <AwardImg src="img/css.png"/>
+                </Award>
+                <Award>
+                    <AwardImg src="img/sass.png"/>
+                    <AwardImg src="img/react.png"/>
+                    <AwardImg src="img/node.png"/>
+                </Award>
+                <Award>
+                    <AwardImg src="img/mongo.png"/>
+                    <AwardImg src="img/express.png"/>
+                    <AwardImg src="img/git.png"/>
+                </Award>
         </Left>
         <Right>
 
-          <Title>Think outside the box</Title>
+          <Title>About Me</Title>
           <WhatWeDo>
             <Line src="./img/line.png"/>
-            <Subtitle>Who we Are</Subtitle>
+            <Subtitle>Thinking outside the box</Subtitle>
           </WhatWeDo>
-          <Desc>we enjoy creating delightful, human-centered digital experiences</Desc>
-          <Button>See our works</Button>
+          <Desc>I am a Full Stack developer with experience building websites and web applications. I specialize in JavaScript, working backend apps with NodeJs and fronted with React. I'm passionate about learning and always seeking to improve my skills and continue growing professionally in order to make valuable contributions at the working group I am part of. I'm seeking for new challenges to test my skills at a work environment. I have incorporated several skills, but I let you here some of those</Desc>
+          <Button>See my works</Button>
         </Right>
       </Container>
     </Section>

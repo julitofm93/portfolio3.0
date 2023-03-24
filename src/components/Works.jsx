@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import Development from "./Development";
 import ProductDesign from "./ProductDesign";
 import WebDesign from "./WebDesing";
+import Illustration from "./Illustration";
+import SocialMedia from "./SocialMedia";
 
 const data = [
   "Web Desing",
@@ -114,8 +116,14 @@ const Works = () => {
             <WebDesign />
           ): work === "Development" ? (
             <Development />
-          ) : (
+          ): work === "Illustration" ?(
+            <Illustration />
+          ): work === "Product Desing" ?(
             <ProductDesign />
+          ): work === "Social Media" ? (
+            <SocialMedia />
+          ): (
+            <WebDesign />
           )}
         </Right>
       </Container>

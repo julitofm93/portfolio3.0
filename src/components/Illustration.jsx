@@ -23,7 +23,7 @@ const Desc = styled.div`
   }
 `;
 
-const ProductDesign = () => {
+const Illustration = () => {
   return (
     <>
       <Canvas>
@@ -33,10 +33,10 @@ const ProductDesign = () => {
         <OrbitControls enableZoom={false} autoRotate/>
       </Canvas>
       <Desc>
-        Esto es un product desing
+        ESto es un illustration
       </Desc>
     </>
   )
 }
 
-export default ProductDesign
+export default Illustration
