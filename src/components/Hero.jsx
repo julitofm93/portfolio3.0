@@ -13,7 +13,7 @@ const Section = styled.div`
   justify-content: space-between;
 
   @media only screen and (max-width: 768px) {
-        height: 100vh;
+        height: 140vh;
     }
 `
 
@@ -42,6 +42,7 @@ const Left = styled.div`
   @media only screen and (max-width: 768px) {
       flex:1;
       align-items: center;
+      height: 100vh;
     }
 `
 const Title = styled.h1`
@@ -80,18 +81,20 @@ const Button = styled.button`
   background-color: #da4ea2;
   color: white;
   font-weight: 500;
-  width: 100px;
+  width: 150px;
   padding: 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 20px;
 `
 
 const Right = styled.div`
   flex: 3;
   position: relative;
   @media only screen and (max-width: 768px) {
-      display: none;
+     /*  display: none; */
+    height: 50vh;
     }
 `
 
@@ -101,7 +104,7 @@ const Img = styled.img`
   object-fit: contain;
   position: absolute;
   top: 0;
-  bottom: 0;
+  bottom: 200;
   left: 0;
   right: 0;
   margin: auto;
@@ -110,6 +113,7 @@ const Img = styled.img`
   @media only screen and (max-width: 768px) {
       width: 300px;
       height: 300px;
+      bottom: 100px;
     }
 
   @keyframes animate {
@@ -147,7 +151,7 @@ const Hero = () => {
               />
             </Sphere>
           </Canvas>
-          <Img src="./img/moon.png"/>
+          <Img src="./img/julito.png"/>
         </Right>
       </Container>
     </Section>

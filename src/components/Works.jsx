@@ -63,7 +63,7 @@ const ListItem = styled.li`
   position: relative;
 
   @media only screen and (max-width: 768px) {
-      font-size: 24px;
+      font-size: 40px;
       color: white;
       -webkit-text-stroke: 0px;
     }
@@ -94,13 +94,17 @@ const ListItem = styled.li`
 
 const Right = styled.div`
   flex: 1;
+
+  @media only screen and (max-width: 768px) {
+      margin-top: 100px;
+    }
 `
 
 const Works = () => {
   
   const [work, setWork] = useState("Web Design")
   return (
-    <Section>
+    <Section id="Projects">
       <Container>
         <Left>
           <List>

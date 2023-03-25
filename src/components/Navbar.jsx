@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Who from './Who'
 
 const Section = styled.div`
     display: flex;
@@ -31,13 +32,15 @@ const Links = styled.div`
 `
 
 const Logo = styled.img`
-    height: 50px;
+    height: 80px;
 `
 
 const List = styled.ul`
     display: flex;
     gap: 20px;
     list-style: none;
+    font-size: 24px;
+    color: white;
 
     @media only screen and (max-width: 768px) {
         display: none;
@@ -45,6 +48,14 @@ const List = styled.ul`
 `
 const ListItem = styled.li`
     cursor: pointer;
+`
+
+const Link = styled.a`
+    text-decoration: none;
+    color: white;
+    :visited{
+        color: white;
+    }
 `
 
 const Icons = styled.div`
@@ -58,10 +69,11 @@ const Icon = styled.img`
     cursor: pointer;
 `
 const Button = styled.button`
-    width: 100px;
+    width: 120px;
     padding: 10px;
     background-color: #da4ea2;
     color: white;
+    font-size: 20px;
     cursor: pointer;
     border: none;
     border-radius: 5px;
@@ -74,15 +86,14 @@ const Navbar = () => {
             <Links>
                 <Logo src="./img/logo.png"/>
                 <List>
-                    <ListItem>Home</ListItem>
-                    <ListItem>Home</ListItem>
-                    <ListItem>Home</ListItem>
-                    <ListItem>Home</ListItem>
+                    <ListItem><Link href="/">Home</Link></ListItem>
+                    <ListItem><Link href="#Who">About</Link></ListItem>
+                    <ListItem><Link href="#Projects">Projects</Link></ListItem>
+                    <ListItem><Link href="#Contact">Contact</Link></ListItem>
                 </List>
             </Links>
             <Icons>
-                <Icon src="./img/search.png"/>
-                <Button>Hire Now</Button>
+                <Button><Link href="#Contact">Hire Now</Link></Button>
             </Icons>
         </Container>
     </Section>

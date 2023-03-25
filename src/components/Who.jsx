@@ -17,6 +17,10 @@ const Section = styled.div`
   scroll-snap-align: center;
   display: flex;
   justify-content: center;
+  @media only screen and (max-width: 768px) {
+    display: none;
+    padding: 20px;
+  }
 `;
 
 const Container = styled.div`
@@ -80,11 +84,12 @@ const Button = styled.button`
   background-color: #da4ea2;
   color: white;
   font-weight: 500;
-  width: 120px;
+  width: 180px;
   padding: 10px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 20px;
 `;
 
 const Award = styled.div`
@@ -105,9 +110,17 @@ const AwardImg = styled.img`
   }
 `
 
+const Link = styled.a`
+    text-decoration: none;
+    color: white;
+    :visited{
+        color: white;
+    }
+`
+
 const Who = () => {
   return (
-    <Section>
+    <Section id="Who">
       <Container>
         <Left>
          <Award>
@@ -134,7 +147,7 @@ const Who = () => {
             <Subtitle>Thinking outside the box</Subtitle>
           </WhatWeDo>
           <Desc>I am a Full Stack developer with experience building websites and web applications. I specialize in JavaScript, working backend apps with NodeJs and fronted with React. I'm passionate about learning and always seeking to improve my skills and continue growing professionally in order to make valuable contributions at the working group I am part of. I'm seeking for new challenges to test my skills at a work environment. I have incorporated several skills, but I let you here some of those</Desc>
-          <Button>See my works</Button>
+          <Button><Link href="#Projects">Check out my projects</Link></Button>
         </Right>
       </Container>
     </Section>

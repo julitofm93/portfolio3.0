@@ -96,7 +96,7 @@ const Contact = () => {
   }
 
   return (
-    <Section>
+    <Section id="Contact">
       <Container>
         <Left>
           <Map/>
