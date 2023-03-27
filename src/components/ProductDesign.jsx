@@ -33,7 +33,7 @@ const ProductDesign = () => {
         <OrbitControls enableZoom={false} autoRotate/>
       </Canvas>
       <Desc>
-        Esto es un product desing
+        Dragon Oracle it's an app builded with Vanilla Javascript. Check out demo
       </Desc>
     </>
   )

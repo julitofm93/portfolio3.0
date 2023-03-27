@@ -33,9 +33,7 @@ const SocialMedia = () => {
         <OrbitControls enableZoom={false} autoRotate/>
       </Canvas>
       <Desc>
-        Esto es un social media
-        We design products with a strong focus on both world class design and
-        ensuring your product is a market success.
+        To Buy App it's an app builded with Vanilla Javascript. Check out demo
       </Desc>
     </>
   )

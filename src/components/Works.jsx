@@ -7,11 +7,11 @@ import Illustration from "./Illustration";
 import SocialMedia from "./SocialMedia";
 
 const data = [
-  "Web Desing",
-  "Development",
-  "Illustration",
-  "Product Desing",
-  "Social Media",
+  "Social Network",
+  "Ecommerce",
+  "Pizza App",
+  "Dragon Oracle",
+  "To Buy App",
 ]
 
 const Section = styled.div`
@@ -96,13 +96,13 @@ const Right = styled.div`
   flex: 1;
 
   @media only screen and (max-width: 768px) {
-      margin-top: 100px;
+      margin-top: 200px;
     }
 `
 
 const Works = () => {
   
-  const [work, setWork] = useState("Web Design")
+  const [work, setWork] = useState("Social Network")
   return (
     <Section id="Projects">
       <Container>
@@ -116,15 +116,15 @@ const Works = () => {
           </List>
         </Left>
         <Right>
-          {work === "Web Design" ? (
+          {work === "Social Network" ? (
             <WebDesign />
-          ): work === "Development" ? (
+          ): work === "Ecommerce" ? (
             <Development />
-          ): work === "Illustration" ?(
+          ): work === "Pizza App" ?(
             <Illustration />
-          ): work === "Product Desing" ?(
+          ): work === "Dragon Oracle" ?(
             <ProductDesign />
-          ): work === "Social Media" ? (
+          ): work === "To Buy App" ? (
             <SocialMedia />
           ): (
             <WebDesign />

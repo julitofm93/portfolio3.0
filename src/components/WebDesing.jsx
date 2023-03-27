@@ -33,7 +33,7 @@ const WebDesing = () => {
         <OrbitControls enableZoom={false} autoRotate/>
       </Canvas>
       <Desc>
-        Esto es un web desing
+        Social Network it's an app builded with React and NodeJS and using SQL as database. Check out demo
       </Desc>
     </>
   )

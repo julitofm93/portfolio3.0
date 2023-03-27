@@ -123,8 +123,17 @@ const Img = styled.img`
   }
 `
 
+const Link = styled.a`
+  text-decoration: none;
+  color: white;
+  :visited{
+    color: white;
+  }
+`
+
 const Hero = () => {
-  return (
+
+  return ( 
     <Section>
       <Navbar/>
       <Container>
@@ -135,7 +144,11 @@ const Hero = () => {
             <Subtitle>What I Do</Subtitle>
           </WhatWeDo>
           <Desc>I enjoy creating digital experiences and facing new challenges to offer better results.</Desc>
-          <Button>Download CV</Button>
+          <Button>
+            <Link href='./docs/JulianFerreyraMiraCV.pdf' target="_blank">
+            Download CV
+            </Link>
+          </Button>
         </Left>
         <Right>
           <Canvas>

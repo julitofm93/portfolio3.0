@@ -33,7 +33,7 @@ const Development = () => {
         <OrbitControls enableZoom={false} autoRotate/>
       </Canvas>
       <Desc>
-        Esto es un development
+        This Ecommerce App has been built using MERN stack. Check out demo
       </Desc>
     </>
   )

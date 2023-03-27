@@ -33,7 +33,7 @@ const Illustration = () => {
         <OrbitControls enableZoom={false} autoRotate/>
       </Canvas>
       <Desc>
-        ESto es un illustration
+        Pizza App it's an app builded with NextJS and using MongoDB as database. Check out demo
       </Desc>
     </>
   )
